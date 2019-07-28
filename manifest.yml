@@ -1,6 +1,6 @@
 manifest_schema: 1
 package: myhouse-notification-buzzer
-revision: 1
+revision: 2
 version: development
 github: myhouse-project/myhouse-notification-buzzer
 dockerhub: myhouseproject/myhouse-notification-buzzer

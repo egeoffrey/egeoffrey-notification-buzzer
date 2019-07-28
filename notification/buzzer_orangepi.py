@@ -11,9 +11,9 @@
 # - NOTIFY: receive a notification request
 # OUTBOUND: 
 
-import OPi.GPIO as GPIO
+import OPi.GPIO
 
 from buzzer import Buzzer
 
 class Buzzer_orangepi(Buzzer):
-    pass
+    gpio = OPi.GPIO

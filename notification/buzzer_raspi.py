@@ -11,9 +11,9 @@
 # - NOTIFY: receive a notification request
 # OUTBOUND: 
 
-import RPi.GPIO as GPIO
+import RPi.GPIO
 
 from buzzer import Buzzer
 
 class Buzzer_raspi(Buzzer):
-    pass
+    gpio = RPi.GPIO

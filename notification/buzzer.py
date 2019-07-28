@@ -13,9 +13,9 @@ class Buzzer(Notification):
     # What to do when running
     def on_start(self):
         # initialize GPIO
-        GPIO.setmode(GPIO.BCM)
-        GPIO.setwarnings(False)
-        GPIO.setup(self.config["pin"], GPIO.OUT)
+        self.gpio.setmode(self.gpio.BCM)
+        self.gpio.setwarnings(False)
+        self.gpio.setup(self.config["pin"], self.gpio.OUT)
         
     # What to do when shutting down
     def on_stop(self):
@@ -24,9 +24,9 @@ class Buzzer(Notification):
    # What to do when ask to notify
     def on_notify(self, severity, text):
         self.log_debug("activating buzzer on pin "+str(self.config["pin"])+" for "+str(self.config["duration"])+" seconds")
-        GPIO.output(self.config["pin"], GPIO.HIGH)
+        self.gpio.output(self.config["pin"], self.gpio.HIGH)
         self.sleep(self.config["duration"])
-        GPIO.output(self.config["pin"], GPIO.LOW)
+        self.gpio.output(self.config["pin"], self.gpio.LOW)
 
      # What to do when receiving a new/updated configuration for this module    
     def on_configuration(self, message):
