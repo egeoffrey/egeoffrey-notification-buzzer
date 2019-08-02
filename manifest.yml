@@ -1,15 +1,16 @@
-manifest_schema: 1
-package: myhouse-notification-buzzer
-revision: 2
-version: development
-github: myhouse-project/myhouse-notification-buzzer
-dockerhub: myhouseproject/myhouse-notification-buzzer
+branch: development
 container_config:
   privileged: true
 description: play a sound through a buzzer connected to a pin
-tags: notification buzzer gpio raspberrypi orangepi
+dockerhub: myhouseproject/myhouse-notification-buzzer
+github: myhouse-project/myhouse-notification-buzzer
+manifest_schema: 2
 modules:
-  - notification/buzzer_raspi:
-      description: play a sound through a buzzer connected to a pin
-  - notification/buzzer_orangepi:
-      description: play a sound through a buzzer connected to a pin
+- notification/buzzer_raspi:
+    description: play a sound through a buzzer connected to a pin
+- notification/buzzer_orangepi:
+    description: play a sound through a buzzer connected to a pin
+package: myhouse-notification-buzzer
+revision: 3
+tags: notification buzzer gpio raspberrypi orangepi
+version: 1.0
