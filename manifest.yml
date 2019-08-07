@@ -2,8 +2,8 @@ branch: development
 container_config:
   privileged: true
 description: play a sound through a buzzer connected to a pin
-dockerhub: myhouseproject/myhouse-notification-buzzer
-github: myhouse-project/myhouse-notification-buzzer
+dockerhub: egeoffrey/egeoffrey-notification-buzzer
+github: egeoffrey/egeoffrey-notification-buzzer
 icon: bell
 manifest_schema: 2
 modules:
@@ -11,7 +11,7 @@ modules:
     description: play a sound through a buzzer connected to a pin
 - notification/buzzer_orangepi:
     description: play a sound through a buzzer connected to a pin
-package: myhouse-notification-buzzer
-revision: 4
+package: egeoffrey-notification-buzzer
+revision: 5
 tags: notification buzzer gpio raspberrypi orangepi
 version: 1.0
