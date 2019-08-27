@@ -9,9 +9,31 @@ manifest_schema: 2
 modules:
 - notification/buzzer_raspi:
     description: play a sound through a buzzer connected to a pin
+    module_configuration:
+    - description: The pin the buzzer is attached to
+      format: int
+      name: pin
+      placeholder: 20
+      required: true
+    - description: The number of seconds the buzzer should be on when run
+      format: int
+      name: duration
+      placeholder: 3
+      required: true
 - notification/buzzer_orangepi:
     description: play a sound through a buzzer connected to a pin
+    module_configuration:
+    - description: The pin the buzzer is attached to
+      format: int
+      name: pin
+      placeholder: 20
+      required: true
+    - description: The number of seconds the buzzer should be on when run
+      format: int
+      name: duration
+      placeholder: 3
+      required: true
 package: egeoffrey-notification-buzzer
-revision: 5
+revision: 6
 tags: notification buzzer gpio raspberrypi orangepi
 version: 1.0

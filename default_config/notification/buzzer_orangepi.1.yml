@@ -1,3 +1,4 @@
 duration: 3
-min_severity: alert
+suppress:
+  severity_below: alert
 pin: 20
