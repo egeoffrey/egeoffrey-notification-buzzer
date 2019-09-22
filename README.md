@@ -67,4 +67,4 @@ notification buzzer gpio raspberrypi orangepi
 
 ## Version
 
-The version of this egeoffrey-notification-buzzer is 1.0-7 on the development branch.
+The version of this egeoffrey-notification-buzzer is 1.0-8 on the master branch.

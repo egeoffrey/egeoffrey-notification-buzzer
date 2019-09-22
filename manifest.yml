@@ -1,4 +1,4 @@
-branch: development
+branch: master
 container_config:
   privileged: true
 description: play a sound through a buzzer connected to a pin
@@ -34,6 +34,6 @@ modules:
       placeholder: 3
       required: true
 package: egeoffrey-notification-buzzer
-revision: 7
+revision: 8
 tags: notification buzzer gpio raspberrypi orangepi
 version: 1.0
